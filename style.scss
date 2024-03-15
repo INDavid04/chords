@@ -1,12 +1,6 @@
 body { margin: 0; padding: 0; background-color: rgb(0, 0, 32); color: rgb(250, 235, 215); font-size: 16px; }
 
-article { display: flex; flex-direction: column; justify-content: center; margin: 0 1rem; min-height: 100vh; min-height: 100dvh; overflow: hidden; }
-    h2 { font-family: Arial, Helvetica, sans-serif; font-weight: 500; }
+article { display: flex; flex-direction: column; justify-content: center; margin: 0 clamp(0.5rem, 5vw, 50rem); min-height: 100vh; min-height: 100svh; overflow: hidden; }
+    h2 { font-family: Arial, Helvetica, sans-serif; font-size: clamp(1rem, 4vw, 4rem); font-weight: 500; }
         h2::first-letter { color: rgb(255, 200, 0); }
-    .Chords { font-family: 'Courier New', Courier, monospace; font-weight: bold; }
-        .ChordsWithWords { display: flex; flex-direction: column; 
-            @media (orientation: landscape) { flex-direction: row; }
-        }
-            .ChordsWithWords div:first-child { opacity: .7; font-weight: normal; 
-                @media (orientation: landscape) { margin-left: 1rem; order: 1; }
-            }
+    .Chords { font-family: 'Courier New', Courier, monospace; font-size: clamp(1rem, 4vw, 3rem); font-weight: bold; }

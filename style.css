@@ -10,14 +10,15 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 1rem;
+  margin: 0 clamp(0.5rem, 5vw, 50rem);
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100svh;
   overflow: hidden;
 }
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1rem, 4vw, 4rem);
   font-weight: 500;
 }
 
@@ -27,26 +28,6 @@ h2::first-letter {
 
 .Chords {
   font-family: "Courier New", Courier, monospace;
+  font-size: clamp(1rem, 4vw, 3rem);
   font-weight: bold;
-}
-
-.ChordsWithWords {
-  display: flex;
-  flex-direction: column;
-}
-@media (orientation: landscape) {
-  .ChordsWithWords {
-    flex-direction: row;
-  }
-}
-
-.ChordsWithWords div:first-child {
-  opacity: 0.7;
-  font-weight: normal;
-}
-@media (orientation: landscape) {
-  .ChordsWithWords div:first-child {
-    margin-left: 1rem;
-    order: 1;
-  }
 }/*# sourceMappingURL=style.css.map */
