@@ -11,7 +11,8 @@
         <nav>
             <ul>
                 <li class="InputContainer">
-                    <input type="search" id="searchInput" placeholder="Search" oninput="searchText()" onkeypress="clearInput(event)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="search" id="searchInput" placeholder="Cauta cantarea dupa primul vers din strofa sau refren..." oninput="searchText()" onkeypress="clearInput(event)">
                 </li>
                 <li>
                     <a href="#chords"><svg height="50" width="100" xmlns="http://www.w3.org/2000/svg"><circle r="45" cx="50" cy="50" fill="#ffc800"/></svg></a>
@@ -39,16 +40,18 @@
     <!-- Preset 
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2></h2>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span></p>
                     <p><span>R</span></p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
             </div>
         </section>
 
@@ -58,512 +61,696 @@
 
     <main id="chords" class="Chords">
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>A Isuse nimeni ca Tine nu e / Eu strig catre El</h2>
-                    <p><span>S</span>1 - 5 - 6m.5 - 4 <br> 1.4 - 1.6m - 7b.4 - 5</p>
-                    <p><span>R</span>1.6m - 4.5 - 1.6m - 4.5 <br> 6m - 4 - 5.6m - 5/7</p>
-                </article>
+            <div class="Title">
+                <h2>A Nu este munte prea nalt / Caci El purtat a pe umerii Sai</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
             </div>
-            <div>
-                <p>1. Isuse, Isuse, nimeni ca Tine nu e <br> Sufletul meu si tot ce sunt, vesnic sa te laude <br> Tarie si stanca, turn de scapare Tu esti <br> Sufletul meu si tot ce sunt, vesnic sa te laude.</p>
-                <p>R: Eu strig catre El, azi cu toti sa cantam <br> Putere marire si slava sa-I dam <br> Mari vor vui, muntii se vor pleca <br> Slava Lui, cand vor vedea <br> Tot ce-ai creat in splendoare azi sta <br> Eu vesnic ma-nchin si iti dau lauda <br> Prin tine exista si prin Harul Tau sunt</p>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span>1.1/3 - 2m - 4.5 - 1.5</p>
+                    <p><span>R</span>5,1 . 1/3 - 2m - 4.5 - 1.4</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Nu este munte prea-nalt <br> Ca să nu-l mişte, <br> Nu e problemă prea grea <br> Să n-o rezolve, <br> Nu e furtună prea grea <br> Să n-o liniştească, <br> Nu e durere prea grea <br> Să n-o aline.</p>
+                    <p>R: /: El purtat-a pe umerii Săi <br> Povara lumii <br> El poate lua chiar acum <br> Povara ta: /</p>
+                    <p>C: Vin’ la Isus, El te primeşte <br> Şi-n dar îţi va da din pacea Sa.</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>F Isus cel inviat / Lasa l sa te atinga</h2>
+            <div class="Title">
+                <h2>A Jos la picioarele ti / Nu i chemare mai mare</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span>1.3m - 4.5 - 1.3m - 4.4m <br> 1 . 5# , 7b - 1</p>
+                    <p><span>R</span>4.5 - 3m.6m - 4.5 - 1</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Jos la picioarele-Ţi, stau adânc plecat <br> În prezenţa Ta /:sunt îngenuncheat :/</p>
+                    <p>R: Nu-i chemare mai mare, nu-i altă onoare <br> Decât să îngenunchiez la tronul Tău <br> Copleşit de uimire, scăldat în iubire <br> Eu trăiesc doar pentru a Te lăuda.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="Title">
+                <h2>C Si noi fiind inconjurati / Sa inlaturam orice pacat</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span>1 - 6m - 5 - 5</p>
+                    <p><span>R</span>4 - 2m - 6m - 6m - 4.5 <br> 4 - 2m - 6m - 4 - 5</p>
+                    <!-- <p><span>S</span>6m - 2m.5 - 2m.4 - 5.6m</p>
+                    <p><span>R</span>4 - 1.2m - 3m - 6m <br> 6m - 2m.5 - 2m.4 - 5.6m</p> -->
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Si noi fiind înconjurati de-un nor asa de martori <br> /: Sa 'nlaturam orice pacat <br> Privind spre malul celalalt <br> Asa crestinii au luptat <br> Ei nu s-au dat în laturi. :/</p>
+                    <p>2. Sa le urmam c-un dor nespus credinta lor suprema <br> /: Caci au luptat si au învins <br> Crestinii nostrii ce s-au stins <br> De dorul Lui au fost cuprinsi <br> Mergeau cântând pe-arene. :/</p>
+                    <p>3. Când legile i-amenintau si-atunci ei n-aveau frica <br> /: Când fiarele le slobozeau <br> Pe mici si mari îi sfâsiau <br> Dar ei de dor mai mult ardeau <br> Nici de-asta n-aveau frica. :/</p>
+                    <p>4. De foame istoviti de frig ei pribegeau departe <br> /: Prin munti si pesteri alungati <br> Prin temnita în fier legati <br> Lovit mai crud si-amenintati <br> De Domnul nu-i desparte. :/</p>
+                    <p>5. Cântau al mântuirii cânt mergând pe orice cale <br> /: Si-atuncea când intrau pe rând <br> In subterane toti cântând <br> Celui ce zice “Vin curând! <br> Vegheati în asteptare”! :/</p>
+                    <p>6. Caci am sa vin ca si un hot în noaptea cea târzie <br> /: Vegheati paziti a mele porti <br> Si atunci Eu n-am sa vin ca hot <br> Când voi striga la voi la toti <br> “Mireasa Mea sa vina”! :/</p>
+                    <p>7. În vremea ce ne-a mai ramas sa stam în asteptare <br> /: Si înapoi nu, nici un pas, <br> ‘nainte sa nu dam ragaz <br> Ca vine Mirele chiar azi <br> Sa îi cântam OSANA ! :/</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="Title">
+                <h2>G Vad Doamne chipul Tau stralucitor / Omule nu intamplarea</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span>6m - 6m - 1.5 - 1 <br> 1.6 - 2m - 5<sup>7</sup> - 1 <br> 6m - 3<sup>7</sup> - 2.3 - 6m</p>
+                    <p><span>R</span>6m - 6m.1 - 5 - 1 <br> 1.,6 - 2m - 3<sup>7</sup> - 6m</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Văd, Doamne, chipul Tău Strălucitor <br> Şi-n stele sus şi-n soare şi în nor, <br> Dar chipul Tău şi omul l-a purtat <br> În vremea când era nevinovat, <br> Căci după chipul Tău Tu L-ai creat, <br> Să fie sfânt şi fără de păcat.</p>
+                    <p>R: /:Omule nu întâmplarea <br> Ţi-a dat chipul minunat, <br> Dumnezeu, cu îndurarea, <br> El te-a binecuvântat! :/</p>
+                    <p>2. Văd Doamne Mâna Ta de Creator <br> Şi-n văi adânci şi-n vârful munţilor <br> În piatra care scapără scântei <br> Şi în parfumul florilor de tei <br> În fagurul ce picură din roi <br> Căci le-ai creat pe toate pentru noi.</p>
+                    <p>3. Văd Doamne chipul Tău în adunări <br> Prin Duhul sfânt cu dar de vindecări <br> Tu locuieşti în cerul stălucit <br> Dar vii şi lângă omul umilit <br> Ca să-l ridici din umilinţa lui <br> Şi-n carul Mântuirii să îl sui.</p>
+                    <p>4. Văd Mâna Ta în fiecare zi <br> Şi-n răsărit, şi-n marele apus; <br> În stropul cel de rouă cristalin, <br> Şi-n norii care, plini de apă, vin <br> Să cadă peste lutul frământat, <br> Să crească rodul binecuvântat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="Title">
+                <h2>A Isuse Isuse nimeni ca Tine nu e / Eu strig catre El</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span>1 - 5 - 6m.5 - 4 <br> 1.4 - 1.6m - 7b.4 - 5</p>
+                    <p><span>R</span>1.6m - 4.5 - 1.6m - 4.5 <br> 6m - 4 - 5.6m - 5/7</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Isuse, Isuse, nimeni ca Tine nu e. <br> In orice zi, voi lauda, puterea si iubirea Ta. <br> Tarie si stanca, turn de scapare Tu esti, <br> Sufletul meu si tot ce sunt, vesnic sa Te laude!</p>
+                    <p>R: Eu strig catre El, azi cu toti sa cantam! <br> Putere, marire si lauda sa-I dam! <br> Mari vor vui, muntii se vor pleca <br> Slava Lui, cand vor vedea <br> Tot ce-ai creat in splendoare azi sta <br> Eu vesnic ma-nchin si iti dau lauda, <br> Prin tine exist si prin Harul Tau sfant, eu sunt...</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="Title">
+                <h2>F Isus cel inviat / Lasa l sa te atinga</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 3 - 3 - 6m</p>
                     <p><span>R</span>2m - 6m - 3 - 5.1 <br> 2m - 6m - 3 - 6m</p>
-                </article>
-            </div>
-            <div>
-                <p>1. /: Isus cel înviat e astăzi printre noi: / x3 <br> Isus e astăzi printre noi!</p>
-                <p>R: /: Lasă-L să te-atingă: / x3 <br>Şi vei fii eliberat. <br>/: Lasă-L să te-atingă: / x3 <br> Vei fii binecuvântat. </p>
-                <p>2. /: Mormântul lui Isus şi astăzi este gol: / x3 <br> Isus e astăzi printre noi. </p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: Isus cel înviat e astăzi printre noi: / x3 <br> Isus e astăzi printre noi!</p>
+                    <p>R: /: Lasă-L să te-atingă: / x3 <br>Şi vei fii eliberat. <br>/: Lasă-L să te-atingă: / x3 <br> Vei fii binecuvântat. </p>
+                    <p>2. /: Mormântul lui Isus şi astăzi este gol: / x3 <br> Isus e astăzi printre noi. </p>
+                </div>
             </div>
         </section>
         
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>D Voi slavi pe Mielul gloriei</h2>
+            <div class="Title">
+                <h2>D Voi slavi pe Mielul gloriei</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1 - 5 - 1 - 5 <br> 6m - 2 - 4.5 - 1</p>
                     <p><span>R</span>5.4 - 1 - 5.4 - 1 <br> 4.3m - 2m.6m - 4.5 - 1</p>
-                </article>
-            </div>
-            <div>
-                <p>1. /: Voi slăvi pe Mielul gloriei <br> Regelui regilor mă-nchin <br> Voi slăvi pe Mielul gloriei <br> Regelui eu mă-nchin. :/</p>
-                <p>R: /:Şi mâinile mi le-nalţ <br> Şi-naintea Ta vin <br> Mâinile mi le-nalţ <br> Şi mă bucur în Tin' <br> Îmi înalţ mâinile către cer <br> Lumea întreabă: de ce? <br> Eu le spun că-mi iubesc Regele.:/</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: Voi slăvi pe Mielul gloriei <br> Regelui regilor mă-nchin <br> Voi slăvi pe Mielul gloriei <br> Regelui eu mă-nchin. :/</p>
+                    <p>R: /:Şi mâinile mi le-nalţ <br> Şi-naintea Ta vin <br> Mâinile mi le-nalţ <br> Şi mă bucur în Tin' <br> Îmi înalţ mâinile către cer <br> Lumea întreabă: de ce? <br> Eu le spun că-mi iubesc Regele.:/</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>C O carte cu sapte peceti</h2>
-                    <p><span>S</span>6m.5 - 6m.5 - 6m.5 - 6m.5 <br> 4.6m - 4.3 - 4.6m - 3</p>
-                    <p><span>R</span>6m.5 - 4.3 - 6m.5 - 4.3</p>
-                </article>
+            <div class="Title">
+                <h2>C O carte cu sapte peceti (1/2)</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
             </div>
-            <div>
-                <p>1. O carte cu şapte peceţi, O carte stă închisă. În mâna Dumnezeului sfânt, În mâna Sa întinsă. Şi un înger puternic din ceruri strigă: "Cine-i vrednic s-o poate deschide?" Dar nici unul din îngerii din cerul înalt, N-a fost vrednic s-o poată deschidă. Aleluia!</p>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span>6m - 5 - 6m - 5 <br> 6m - 5 - 6m - 5 <br> 4 - 6m - 4 - 3 <br> 4 - 6m - 3 - 3</p>
+                    <p><span>R</span>6m - 5 - 4 - 3</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. O carte cu şapte peceţi, O carte stă închisă. În mâna Dumnezeului sfânt, În mâna Sa întinsă. Şi un înger puternic din ceruri strigă: "Cine-i vrednic s-o poate deschide?" Dar nici unul din îngerii din cerul înalt, N-a fost vrednic s-o poată deschidă. Aleluia!</p>
                 <p>R: Vrednic este Mielul, Ce-a fost înjunghiat, Să primească slava, Slavă ne-ncetat!</p>
                 <p>2. Nici îngerii din cerul înalt, Nici sfinţii care cântă, Niciunul vrednic nu s-a găsit, Să ceară cartea sfântă. Dar deodată-n picioare apare un Miel, Ce părea-njunghiat şi zdrobit, Cu ochii în lacrimi, de dragoste plin, Pentru noi a murit răstignit. Aleluia!</p>
                 <p>3. Isus din cer a venit, Lăsat-a slava toată, Şi-n lume, pentru că ne-a iubit, A suferit odată,
                 Să ne spună că este un cer minunat, Şi o veşnică viaţă-n mărire, Şi-a murit răstignit, Pe cruce la Calvar, Minunată-i a Sa mântuire. Aleluia!</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G Evanghelia are putere</h2>
+            <div class="Title">
+                <h2>G Evanghelia are putere</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 6m - 3 <br> 2m - 2m - 6m.3</p>
                     <p><span>R</span>6m - 2m - 5 - 1.3 <br> 6m - 2m - 3 - 6m</p>
                     <!-- <p>6m - 2sapte - 2m - 1 - 2sapte-6m <br> 6m - 2m - 2sapte - 6m</p> -->
-                </article>
-            </div>
-            <div>
-                <p>1. Cerul și Pământul, Ne spune Cuvântul, vor pieri, Un lucru rămâne, Peste timp și lume pe vecii, Ne-a fost dăruită, Cu sânge sfințită la Calvar, N-are asemănare, Sub întregul soare sau hotar.</p>
-                <p>R: /:Evanghelia :/ are putere, <br> /: Evanghelia :/ nicicând nu piere.</p>
-                <p>2. Vremuri de prigoană, Să strecoare teama n-au lipsit, Temelia sfântă, Nu a fost zidită pe nisip, Unde a fost vestită, Ea a fost primită ca un dar, În inimi păstrată, Și la alții dată ca un jar.</p>
-                <p>3. Cine-o împlinește, Fericit trăiește tot mereu, Și-n clipele grele, Îi dă mângâiere Dumnezeu. Ea ne este harul, Ne-alungă amarul și ne dă, Prin credință-n Domnul, O viață-n ceruri veșnică.</p>
-                <p>4. Ea mereu ne-nvață, Și ne dă povață, cum trăim, Calea ne arată, Jertfa Domnului s-o prețuim, Nu-i carte în lume, Care să te-ndrume spre Isus, Ea te luminează, Și îți dă viață-n ceruri sus.</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Cerul și Pământul, ne spune Cuvântul, vor pieri, <br> Un lucru rămâne, peste timp și lume pe vecii, <br> Ne-a fost dăruită, cu sânge sfințită la Calvar, <br> N-are asemănare, sub întregul soare sau hotar.</p>
+                    <p>R: /:Evanghelia :/ are putere, <br> /: Evanghelia :/ nicicând nu piere.</p>
+                    <p>2. Vremuri de prigoană, să strecoare teama n-au lipsit, <br> Temelia sfântă, nu a fost zidită pe nisip, <br> Unde a fost vestită, Ea a fost primită ca un dar, <br> În inimi păstrată si la alții dată ca un jar.</p>
+                    <p>3. Cine-o împlinește, fericit trăiește tot mereu, <br> Și-n clipele grele, ii dă mângâiere Dumnezeu. <br> Ea ne este harul, ne-alungă amarul și ne dă, <br> Prin credință-n Domnul, o viață-n ceruri veșnică.</p>
+                    <p>4. Ea mereu ne-nvață si ne dă povață, cum trăim, <br> Calea ne arată, Jertfa Domnului s-o prețuim, <br> Nu-i carte în lume, care să te-ndrume spre Isus, <br> Ea te luminează si îți dă viață-n ceruri sus.</p>
+                </div>
             </div>
         </section>
-
+        
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>Bb Noi va aducem pacea</h2>
+            <div class="Title">
+                <h2>Bb Noi va aducem pacea</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>A</span>6m - 6.2m - 3.6m - 4,5.3</p>
-                </article>
-            </div>
-            <div>
-                <p>/: Noi va aducem pacea :/ x3 <br> Pacea, pacea lui Isus!</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>/: Noi va aducem pacea :/ x3 <br> Pacea, pacea lui Isus!</p>
+                </div>
             </div>
         </section>
-
+        
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>F Suntem o familie unita</h2>
+            <div class="Title">
+                <h2>F Suntem o familie unita</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 1 - 3 - 6m</p>
                     <p><span>R</span>6m - 2m - 5 - 1 <br> 4 - 2m - 3 - 6m</p>
-                </article>
-            </div>
-            <div>
-                <p>1. /: Ce minunat e să fii dintr-o familie, <br> Familia sfantă-a Domnului Isus! : /</p>
-                <p>R: /: Suntem o familie unită, <br> Suntem o familie reală: <br> Familia care iubeşte, <br>Familia Domnului Isus! : /</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: Ce minunat e să fii dintr-o familie, <br> Familia sfantă-a Domnului Isus! : /</p>
+                    <p>R: /: Suntem o familie unită, <br> Suntem o familie reală: <br> Familia care iubeşte, <br>Familia Domnului Isus! : /</p>
+                </div>
             </div>
         </section>
-
+        
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>C Orice genunchi sa se aplece</h2>
+            <div class="Title">
+                <h2>C Orice genunchi sa se aplece</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1 - 4 - 1 - 1 <br> 1 - 4 - 1 - 1 <br> 4 - 4 - 5 - 5</p>
                     <p><span>R</span>6m - 3m - 4 - 1.3m <br> 6m - 3m - 4 - 3 <br> 6m - 3m - 4 - 1 <br> 6m - 3m - 5 - 1</p>
-                </article>
-            </div>
-            <div>
-                <p>1. /: Orice genunchi să se-aplece în faţa Sa, În faţa Regelui să strige: Aleluia! :/ Întreaga lume să zic-acum:</p>
-                <p>R: Glorie Regelui ! Glorie Regelui ! Glorie Regelui Sfânt ! Glorie, Glorie, Glorie !</p>
-                <p>2. /: Isus Hristos este Mielul lui Dumnezeu, Mielul Preasfânt ce a zis: O, Tatăl Meu ! :/ Mă duc pe pământ să răscumpăr lumea.</p>
-                <p>R: Glorie Mielului ! Glorie Mielului ! Glorie Mielului Sfânt ! Glorie, Glorie, Glorie !</p>
-                <p>3. /: Orice făptură să zică Celui divin: Glorie! Glorie! Glorie! Sfintei Treimi! :/ Întreaga lume să zică acum:</p>
-                <p>R: Glorie Tatălui ! Glorie Fiului ! Glorie Sfântului Duh ! Glorie, Glorie, Glorie !</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: Orice genunchi să se-aplece în faţa Sa, În faţa Regelui să strige: Aleluia! :/ Întreaga lume să zic-acum:</p>
+                    <p>R: Glorie Regelui ! Glorie Regelui ! Glorie Regelui Sfânt ! Glorie, Glorie, Glorie !</p>
+                    <p>2. /: Isus Hristos este Mielul lui Dumnezeu, Mielul Preasfânt ce a zis: O, Tatăl Meu ! :/ Mă duc pe pământ să răscumpăr lumea.</p>
+                    <p>R: Glorie Mielului ! Glorie Mielului ! Glorie Mielului Sfânt ! Glorie, Glorie, Glorie !</p>
+                    <p>3. /: Orice făptură să zică Celui divin: Glorie! Glorie! Glorie! Sfintei Treimi! :/ Întreaga lume să zică acum:</p>
+                    <p>R: Glorie Tatălui ! Glorie Fiului ! Glorie Sfântului Duh ! Glorie, Glorie, Glorie !</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>F# Puterea ce o ai sa schimbe inimi / Te aude Cerul cand spui da</h2>
+            <div class="Title">
+                <h2>F# Puterea ce o ai sa schimbe inimi / Te aude Cerul</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 6m - 6m - 3 <br> 2m - 3 - 2m - 6m </p>
                     <p><span>R</span>6m - 2m - 6m - 2m <br> 6m - 2m - 3 - 6m</p>
-                </article>
-            </div>
-            <div>
-                <p>1. /: Puterea ce o ai să schimbe inimi <br> S-aducă oameni pe cărări divine <br> Iubirea ce-ai avut-o la Calvar <br> Să mori o Doamne pentru mine :/</p>
-                <p>R: /:Te-aude cerul când spui "DA" <br> Vino acum nu amâna <br> Şi vei fi un om iertat, un om binecuvântat <br> Vino acum să fi salvat :/</p>
-                <p>2. /: Iar dacă eşti un păcătos <br> Vino la Isus Hristos <br> Predă-ţi degrabă inima <br> Să locuiască Domnu-n ea :/</p>
-                <p>3. /: Cuvintele Scripturii spun <br> Să vii la El căci El e bun <br> Să laşi în urmă tot ce-i rău <br> Şi să fi cu Dumnezeu :/</p>
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>C Nu pot uita vreodată / Traiasca Domnul</h2>
-                    <p><span>S</span></p>
-                    <p><span>R</span></p>
-                </article>
-            </div>
-            <div>
-<p>1. Nu pot uita vreodată
-Iubirea arătată de Isus;
-M-a-mbrăcat în haine albe
-A pus pe mine podoabele din cer!
-El mi-a dat haină de Nuntă
-Ce privirea o încântă orişicui
-Şi în mine, a pus o taină:
-E iubirea arătată omului!</p>
-
-<p>R: /:Trăiască Domnul,
-El este Stânca mea
-În care mă încred!
-Trăiască Domnul,
-El este Stânca mea şi Cetăţuia mea! :/</p>
-
-<p>2. Şi viaţa când va trece,
-Nu vreau să-mi fie rece inima,
-Că vreau să-I cânt iubirea
-La Cel ce nemurirea-n dar mi-a dat!
-Dumnezeu îmi dă tărie
-Să Îi cânt cu bucurie numai Lui,
-În necaz şi clipe grele,
-Îmi trimite mângâiere, Harul Lui!</p>
-
-<p>3. Iar când cei răi, pe urme,
-Doreau să-mi ia viaţa, am zărit
-O Cetate de scăpare,
-Ajutor şi alinare, la necaz
-Din groapa cea adâncă
-M-a pus să stau pe Stâncă mâna Lui
-Şi în turnul de scăpare
-Fericit, cânt o cântare Domnului!</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: Puterea ce o ai să schimbe inimi <br> S-aducă oameni pe cărări divine <br> Iubirea ce-ai avut-o la Calvar <br> Să mori o Doamne pentru mine :/</p>
+                    <p>R: /:Te-aude cerul când spui "DA" <br> Vino acum nu amâna <br> Şi vei fi un om iertat, un om binecuvântat <br> Vino acum să fi salvat :/</p>
+                    <p>2. /: Iar dacă eşti un păcătos <br> Vino la Isus Hristos <br> Predă-ţi degrabă inima <br> Să locuiască Domnu-n ea :/</p>
+                    <p>3. /: Cuvintele Scripturii spun <br> Să vii la El căci El e bun <br> Să laşi în urmă tot ce-i rău <br> Şi să fi cu Dumnezeu :/</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G Orice furtuna ar veni</h2>
+            <div class="Title">
+                <h2>C Nu pot uita vreodată / Traiasca Domnul</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span>6m - 6m - 2m <br> 5 - 5 - 1.3 <br> 6m - 6m - 2m <br> 5 - 5.3 - 6m</p>
+                    <p><span>R</span>2m - 6m.3 - 6m - 6m</p>
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Nu pot uita vreodată <br> Iubirea arătată de Isus; <br> M-a-mbrăcat în haine albe <br> A pus pe mine podoabele din cer! <br> El mi-a dat haină de Nuntă <br> Ce privirea o încântă orişicui <br> Şi în mine, a pus o taină: <br> E iubirea arătată omului!</p>
+                    <p>R: /:Trăiască Domnul, <br> El este Stânca mea <br> În care mă încred! <br> Trăiască Domnul, <br> El este Stânca mea şi Cetăţuia mea! :/</p>
+                    <p>2. Şi viaţa când va trece, <br> Nu vreau să-mi fie rece inima, <br> Că vreau să-I cânt iubirea <br> La Cel ce nemurirea-n dar mi-a dat! <br> Dumnezeu îmi dă tărie <br> Să Îi cânt cu bucurie numai Lui, <br> În necaz şi clipe grele, <br> Îmi trimite mângâiere, Harul Lui!</p>
+                    <p>3. Iar când cei răi, pe urme, <br> Doreau să-mi ia viaţa, am zărit <br> O Cetate de scăpare, <br> Ajutor şi alinare, la necaz <br> Din groapa cea adâncă <br> M-a pus să stau pe Stâncă mâna Lui <br> Şi în turnul de scăpare <br> Fericit, cânt o cântare Domnului!</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="Title">
+                <h2>G Orice furtuna ar veni</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>4 - 5 - 6m - 6m</p>
                     <p><span>R</span>4 - 5 - 6m - 6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: Când Domnul e la cârma vieții <br> Cu El prin valuri nu mă tem <br> Cu El orice furtună trece <br> Doar El e ajutorul meu :/</p>
+                    <p>R. /: Orice furtună ar veni <br> Și orice val s-ar ridica <br> Nimic nu este mai puternic <br> Ca Domnul Isus stânca mea :/</p>
+                    <p>2. /: Cu Domnul meu în lumea aceasta <br> Nu mă voi da nicicând bătut <br> Cu El e mai ușoară lupta <br> Cu El voi fi de neînfrânt :/</p>
+                    <p>3. /: Cu Domnul meu întotdeauna <br> Prin ape și prin văi adânci <br> Chiar prin cuptorul încercării <br> Cu El voi fi de neînfrânt :/</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>C Sunt un pribeag</h2>
+            <div class="Title">
+                <h2>C Sunt un pribeag</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 2m - 6m - 6m <br> 2m - 5 - 6m - 3</p>
                     <p><span>R</span>4 - 5 - 1 - 1 <br> 4 - 5 - 3 - 3 <br> 6m - 2m - 6m - 6m <br> 2m - 5 - 6m - 3</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Sunt un pribeag fără de ţară <br> Rătăcitor prin lung pustiu <br> Dar am în ceruri o comoară <br> Că ţara mea e-n veşnicii.</p>
+                    <p>R: Mă-ndrept spre cer să-L văd pe Domnul <br> Să nu mai fiu un pelegrin <br> Căci după ce-am sa trec Iordanul <br> Se va sfârşi al meu suspin.</p>
+                    <p>2. Voi lepăda a mea povară <br> Eliberat de crucea grea <br> Nădejdea mea nu o să moară <br> Şi voi intra-n odihna Sa.</p>
+                    <p>3. Tu vezi ce grea e-naintarea <br> Mă lupt sa biruiesc mereu! <br> Un dor nespus mă cheamă-acasă: <br> E dorul după Dumnezeu!</p>
+                    <p>4. Şi voi parcurge calea toată, <br> Şi voi ajunge-al meu sfârşit, <br> Primit voi fi cu bucurie <br> Acasă, când voi fi sosit!</p>
+                </div>
             </div>
         </section>
-
+        
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>C Suntem trecatori / Acolo ne este tara</h2>
+            <div class="Title">
+                <h2>C Suntem trecatori / Acolo ne este tara</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 1 - 2m.1 - 3 <br> 6m - 1 - 3 - 6m</p>
                     <p><span>R</span>6m - 6m - 5 - 1.3 <br> 2m - 6m - 3 - 6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Suntem trecători, suntem călători <br> Pornim înspre ţara de vis <br> Oriunde am fi, oriunde ne-am găsi <br> Nu va fi nicicând ca-n paradis</p>
+                    <p>R: /: Acolo ne este ţara, promisă de Isus <br> Cerul sfânt, patria dorită <br> Ţara cea de sus :/</p>
+                    <p>2. Suntem trecători, suntem călători <br> Mai avem puţin de mers <br> Şi în curând, de pe pământ <br> Vom pleca spre Univers</p>
+                    <p>3. Suntem trecători, suntem călători <br> Şi cântecul acesta s-a sfârşi <br> Curând pe nori, în splendori <br> Dumnezeu ne va răpi</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>Eb Trambita curand rasuna</h2>
+            <div class="Title">
+                <h2>Eb Trambita curand rasuna</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 6m - 5 - 2m - 6m</p>
                     <p><span>R</span>2m - 6m - 3 - 6m <br> 2m - 6m - 5 - 6m <br> 2m - 6m - 3 - 6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: Trâmbița curând răsună <br> Și anunță vestea bună: <br> Vine, da, vine, vine Isus! : /</p>
+                    <p>R: /: Ești tu gata de plecare? <br> Să ieși în întâmpinare, <br> Sus pe nori când va veni? : / <br> /: Osana! Maranata! <br> În curând pe nori Îl vom vedea! <br> Osana! Maranata! <br> Glorie în veci, Aleluia! : /</p>
+                    <p>2. /: Trâmbița răsună tare, <br> Se aude-n depărtare: <br> Vine, da vine, vine Isus! : /</p>
+                    <p>3. /: Trâmbița dă deșteptarea, <br> Ascultați cu toți chemarea: <br> Vine, da vine, vine Isus! : /</p>
+                    <p>4. /: Trâmbița ne dă semnalul: <br> Se sfârșeste cu amarul, <br> Vine, da vine, vine Isus! : /</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>Eb Cand nu mai poti tu poate El</h2>
+            <div class="Title">
+                <h2>Eb Tu trebuie sa crezi / Cand nu mai poti tu poate El</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 3m - 2 - 5.3 <br> 6m.7 - 3m.1 - 6m - 7.3m</p>
                     <p><span>R</span>3m - 6m - 3m - 7 <br> 3m - 6m - 1 - 7.3m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Tu trebuie să crezi, să crezi în Dumnezeu <br> Tu trebuie să-L vezi, în ajutorul tău <br> Dacă Îl vei chema, nu te va refuza <br> Căci dacă nu mai poți tu, poate El.</p>
+                    <p>R: /: Când nu mai poţi tu, poate El <br> Poate El, poate El <br> Când nu mai poți tu, poate El <br> Poate El, Dumnezeu :/</p>
+                    <p>2. Când crezi că nu mai poți și ești descurajat <br> Putere nu mai ai și ești îngrijorat <br> Ridică-ți ochii-n sus și cheamă-L pe Isus <br> Căci dacă nu mai poți tu, poate El.</p>
+                    <p>3. Tu nu descuraja, tu nu descuraja <br> Tu nu descuraja, Domnu-i de partea ta <br> Tu nu descuraja, pe calea aceasta <br> Căci dacă nu mai poți tu, poate El.</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G# Cand in zare / Dumnezeu e taria mea</h2>
+            <div class="Title">
+                <h2>G# Cand in zare se iveste / Dumnezeu e taria mea</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 6m - 4.5 - 6m <br> 6m - 6m - 4.5 - 6m <br> 2m - 2m - 4 - 5.6m <br> 2m - 2m - 4 - 5.6m <br></p>
                     <p><span>R</span>4 - 1 - 5 - 6m <br> 4 - 1 - 4.5 - 6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Când în zare se iveşte solul celui necurat, <br> Dumnezeu e tăria mea! <br> Când armatele de duhuri cerul l-au întunecat, <br> Dumnezeu e tăria mea! <br> Când tot iadul stă-n picioare pregătit pentru război, <br> Simt că sufletul se zbate, prins în cursa grea, <br> Mă aplec în rugăciune şi-aştept ajutorul Slavei, <br> Dumnezeu e tăria mea!</p>
+                    <p>R: /:Dumnezeu e tăria mea, <br> Adăpost pentru sufletul meu, <br> Ajutor, când povara e grea, <br> Dumnezeu e tăria mea! :/</p>
+                    <p>2. Dumnezeu are putere ca în cer şi pe pământ, <br> Dumnezeu e tăria mea! <br> Tot ce-n lume se întamplă este scris şi în Cuvânt, <br> Dumnezeu e tăria mea! <br> Încercarea când e mare şi se pare că mă-ngroapă, <br> Întunericul e gros şi nu mai pot vedea, <br> Plec şi fruntea şi genunchiul, dar înalţ spre ceruri duhul, <br> Dumnezeu e tăria mea!</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G# Nori negri de ar veni</h2>
+            <div class="Title">
+                <h2>G# Nori negri de ar veni</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 4 - 5 - 6m <br> 6m - 1 - 2m - 3</p>
                     <p><span>R</span>6m - 4 - 1 - 5</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Nori negri de-ar veni, valuri mari de-ar lovi, <br> Știu că nu mă vor clinti. <br> Mulți mă vor întreba, de unde-i puterea ta, <br> Eu le voi spune așa:</p>
+                    <p>R: /: El e Stânca mea, El e pacea mea, <br> El e ocrotirea, eu nu mă tem! <br> El e El-Shaddai, Sfântul Adonai, <br> El mi-aude glasul, oricând Îl chem! <br> Nu mă tem! : /</p>
+                    <p>2. Singur și-mpresurat, slab și abandonat, <br> Par eu, pe barcă în larg. <br> Cel rău s-ar bucura, dacă m-aș scufunda, <br> Eu îi voi spune așa:</p>
+                    <p>3. Nu, nu mă-nfricoșez, ci spre liman vâslesc, <br> Pănă la capăt sosesc. <br> Ziua, chiar de s-a scurs și soarele e-apus, <br> Lumina mea e Isus!</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G# Primavara vara / Caci el va fi ca un pom</h2>
+            <div class="Title">
+                <h2>G# Primavara vara / Caci el va fi ca un pom</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 4 - 5 - 6m <br> 6m - 4 - 3 - 6m</p>
                     <p><span>R</span>2m - 5 - 1 - 3 <br> 6m - 3 - 6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Primavara, vara, toamna, iarna <br> Eu il laud pe Dumnezeu <br> Aleluia!</p>
+                    <p>R: Caci el va fi ca un pom <br> Sadit pe malul apei <br> Ce la timp, aduce rod.</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G# Din El prin El si pentru El</h2>
+            <div class="Title">
+                <h2>G# Din El prin El si pentru El</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 4 - 5 - 6m <br> 6m - 4 - 3 - 6m</p>
                     <p><span>R</span>4 - 5 - 1.5 - 6m <br> 4 - 3m - 6m - 6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: Din El, prin El și pentru El <br> Sunt toate lucrurile :/ x3</p>
+                    <p>R: /:A Lui să fie gloria :/ x3 <br> In veci de veci, amin.</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G Odata L-am vazut trecand (3/4)</h2>
+            <div class="Title">
+                <h2>G Odata L am vazut trecand (3/4)</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1 - 1 - 5 - 5 - 1</p>
                     <p><span>R</span>1.,5 - 1 - 1</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1 Odată, L-am văzut trecând <br> Cu turma pe Păstorul blând, <br> [: Mergea cu turma la izvor, <br> Blândul Păstor, blândul Păstor. :]</p>
+                    <p>2 Pe-o oaie ce căzuse jos <br> A ridicat-o El frumos, <br> [: Şi-a dus-o-n braţe iubitor, <br> Blândul Păstor, blândul Păstor. :]</p>
+                    <p>3 Pe alta, care la pământ <br> Zăcea cu picioruşul frânt, <br> [: El o legă mângâietor, <br> Blândul Păstor, blândul Păstor. :]</p>
+                    <p>4 Iar mai târziu L-am întâlnit, <br> Cu spini era împodobit, <br> [: Într-o mulţime de popor <br> Blândul Păstor, blândul Păstor. :]</p>
+                    <p>5 Când L-am văzut L-am întrebat <br> Cine sunt cei ce Te-au scuipat?" <br> [: Iar El a suspinat uşor <br> Blândul Păstor, blândul Păstor. :]</p>
+                    <p>6 Şi mi-a răspuns duios şi lin, <br> Cei ce mi-au pus cununi de spini <br> [: Sunt cei cărora iubitor <br> Le-am fost Păstor, Le-am fost Păstor.:]</p>
+                    <p>7 Iar cei ce mă batjocoresc <br> Şi mă împing şi mă lovesc, <br> [: Sunt cei la care, iubitor, <br> Le-am fost Păstor, le-am fost Păstor.:]</p>
+                    <p>8 Iar cei ce mă lovesc turbat <br> Sunt oile care pe braţ, <br> [: Le-am dus la câmp şi la izvor <br> Ca un Păstor, ca un Păstor. :]</p>
+                    <p>9 Atunci oile au venit, <br> Pe cruce sus L-au răstignit, <br> [: Iar El plângea de mila lor, <br> Blândul Păstor, blândul Păstor. :]</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G Numai o data tu traiesti</h2>
+            <div class="Title">
+                <h2>G Numai o data tu traiesti</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1.5 - 5 - 5.1 - 1.,5</p>
                     <p><span>R</span>1.,4 - 4.,5 - 1.5 - 1</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Numai o dată tu trăieşti <br> Şi cui ai vrea tu să-i slujeşti? <br> /: Numai o inimă tu ai <br> Şi cui ai vrea tu s-o predai? :/</p>
+                    <p>2. O, de-ai sluji tu lui Isus <br> Şi inima s-o-ndrepţi în sus, <br> /: Isus ar fi Stăpânul tău, <br> Iar tu i-ai fi copilul Său. :/</p>
+                    <p>3. El ţi-ar aduce bucurii, <br> Pe care tu nici nu le ştii, <br> /: În clipe grele de dureri, <br> El ţi-ar aduce mângâieri. :/</p>
+                    <p>4. Atunci întreagă viaţa ta, <br> Cu bucurie i-ai cânta <br> /: Şi-ai spune fericit oricui, <br> Ce dulce e viața Lui. :/</p>
+                    <p>5. Viața-ntreagă I-ai sluji <br> Și-apoi în cer cu El ai fi, <br> /: Căci Domnu-ar fi Stăpânul tău <br> Iar tu I-ai fi copilul Său! :/</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>D Cand lupta ma inconjoara / Lupta e doar a Ta</h2>
+            <div class="Title">
+                <h2>D Cand lupta ma inconjoara / Lupta e doar a Ta</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1 - 1 - 4 - 4 <br> 6m - 6m.5 - 4 - 4</p>
                     <p><span>R</span>4.1 - 5.6m - 4.1 - 5.6m <br> 4.1 - 5.6m - 4.1 - 5.1</p>
                     <p><span>B</span>4 - 1 - 5 - 6m.5</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Când lupta mă înconjoară, <br> Tu vezi victoria <br> Când munții înalți se ridică, <br> Tu îi îndepărtezi <br> Iubire ta mă-nconjoara <br> În incercare <br> Cum aș putea să mă tem, <br> Când Tu mă ocrotești?</p>
+                    <p>R: Și când mă lupt, mă lupt pe genunchi <br> Mâini spre cer voi 'nâlța, Doamne, că lupta e doar a Ta <br> Și orice teama ție-ți voi da <br> Și-n noaptea-am să cânt, Doamne lupta e doar a Ta</p>
+                    <p>2. Când Tu ești cu mine, cine-mi stă-mpotrivă? <br> Nimic nu-i prea greu, cu Tine, Domnul meu <br> Tu poți vedea frumusețea, chiar și în cenușă <br> Când tot ce văd este crucea, Tu mormântul gol îl vezi</p>
+                    <p>B: Turn de scăpare, stânca cea tare <br> Nimic nu poate sta-mpotriva Regelui <br> Lumina în noapte, stâpan peste toate <br> Nimic nu poate sta-motriva Regelui</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>A Cuvantul Tau Isus / La cuvantul Tau</h2>
+            <div class="Title">
+                <h2>A Cuvantul Tau Isus / La cuvantul Tau</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 4 - 1 - 5 <br> 6m - 4 - 6m.5 - 1</p>
                     <p><span>P</span>4 - 5 - 6m - 5</p>
                     <p><span>R</span>4 - 5.6m - 4 - 5.6m <br> 4 - 5.1 - 4 - 5 <br> 4 - 5.6m - 4 - 4.6m <br> 4 - 5.1 - 4 - 5</p>
                     <p><span>B</span>4 - 5 - 6m - 3m <br> 4 - 5 - 4 - 5</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Cuvântul Tău Isus, e viu si lucrătort <br> E puternic si-adevarat <br> La porunca Ta, furtuna va-nceta <br> Nimic nu sta în calea Ta <br> Cuvântul Tău, Isus, bolnavi a vindecat <br> Pe cei captivi i-a eliberat <br> Cuvântul Tău, Isus, si morți a inviat <br> El e viu si adevarat <br> Oooo, oooo</p>
+                    <p>R: La Cuvântul Tau marea se va desparti <br> La Cuvântul Tau muntele se va topi <br> La cuvantul Tau si pustia va-nverzi <br> Tu ești Domn in fiecare zi <br> La Cuvântul Tău oasele prind viata iar <br> La Cuvântul Tău îndoielile dispar <br> La cuvantul Tau izbavirea va veni <br> Tu ești Domn in fiecare zi</p>
+                    <p>B: Cerul si pământul vor trece <br> Cuvântul Tău, Isus, e neschimbat <br> Cuvântul Tău este duh si viata <br> E adevărat, adevărat</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>A Nu te indoi ci crede / Nu norul este vesnic (1/2)</h2>
+            <div class="Title">
+                <h2>A Nu te indoi ci crede / Nu norul este vesnic (1/2)</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1 - 4 - 1.5 - 1 <br> 1 - 4 - 5 - 1</p>
                     <p><span>R</span>1 - 4/1 . 1 - 4 - 1 <br> 5 - 1 - 4 - 5</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Nu te îndoi ci crede / Căci dincolo de nori <br> E-un soare şi mai dulce / Şi mai strălucitor <br> /: Nu norul este veşnic / Ci soarele-i acel <br> Ce-nvinge şi rămâne / Stăpân în urmă El :/</p>
+                    <p>2. Nu te îndoi ci crede / Că dincolo de tot <br> Veghează Dumnezeul / Puternic savaot <br> /: Căci nici un păr nu-ţi cade / Căci nici o clipă nu-i <br> Că nu-i nici o-ncercare / Decât prin voia Lui :/</p>
+                    <p>3. Nu te uita la tine / Că eşti atât de slab <br> Nici la vrăşmaşul care / Te-ar nimici degrab’ <br> /: Nu te uita la ziduri / La porţile de fier <br> La ura ce scrşneşte / Ci uită-te la cer :/</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G E putere / Noi suntem Biserica fratilor</h2>
+            <div class="Title">
+                <h2>G E putere / Noi suntem Biserica fratilor</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 6m - 6m - 3 <br> 4 - 4 - 5 - 1 <br>6m - 6m - 6 - 2m <br> 3 - 6m - 3 - 6m</p>
                     <p><span>R</span>6m - 6m.5 - 5 - 4 <br> 6m - 6m - 5 - 4 - 3 - 6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: E putere, e putere. <br> E putere, e putere. <br> E putere-n sângele lui Isus Hristos! :/</p>
+                    <p>C: Nici duşmanul, nici duşmanul, <br> Nici duşmanul, nici duşmanul, <br> Nu poate să-mi strice viaţa! <br> De ce? Pentru că, pentru că <br> În sângele lui Isus Hristos este putere! <br> Azi te chemă Dumnezeu, vrea să fii copilul Său, <br> Să trăieşti pe acest pământ călăuzit de Duhul Sfânt!</p>
+                    <p>R: Noi suntem Biserica, fraţilor, fraţilor! <br> Noi suntem Biserica, fraţilor, fraţilor, fraţilor!</p>
+                    <p>2. /: Plin de Duh, plin de Duh, <br> Plin de putere, plin de putere, <br> Plin de Duh, plin de putere e Isus! :/</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G Opreste te degraba</h2>
+            <div class="Title">
+                <h2>G Opreste te degraba</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 5 - 4 - 3</p>
                     <p><span>R</span>6m - 2m - 5 - 1.3 <br> 6m - 2m - 3 - 6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Oprește-te degrabă, frate te întreabă, <br> Care-i drumul tău, pe unde mergi? <br> Unde ți-e credința, cum stai cu pocăința? <br> În viața-aceasta ce alegi?</p>
+                    <p>R: /: Esti pregătit să pleci, spre locul mult visat? <br> Ești pregatit să zbori spre Raiul așteptat? <br> Legat ești de Pământ prin viața ce-o trăiești, <br> Sau Domnului slujești? : /</p>
+                    <p>2. Nu te uita la lume crezând că toate-s bune, <br> Uitând că te-ai decis pentru viață, <br> Adu-ți mereu aminte de lucrurile sfinte, <br> Biblia să-ți fie a ta povață.</p>
+                    <p>3. Cât mai este zi te poți pregătii, <br> Poți să decizi ce vrei să faci. <br> Nu privi în urmă și-alege calea bună, <br> Cu Domnul Dumnezeu să te împaci.</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>C Nu te indoi ci crede / E putere</h2>
+            <div class="Title">
+                <h2>C Nu te indoi ci crede / E putere</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1 - 2m.5 - 4 - 1</p>
                     <p><span>R</span>1.5 - 4.1 - 1.5 - 4.1 <br> 1.5 - 4.1 - 4.5 - 1</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Nu te-ndoi ci crede oricât de grea-i durerea <br> Cãci Domnul te mai poate vindeca <br> La El este puterea la El e mîngâierea <br> El stie cât de grea e boala ta</p>
+                    <p>R: E putere, putere, în numele Isus <br> E iertare, iertare, în sângele ce-a curs <br> E iubire, salvare si vindecare-n dar <br> E putere în jertfa din calvar</p>
+                    <p>2. Isus la scãldatoare a vindecat ologul <br> Cãci nimeni nu-i venea în ajutor <br> Si azi are putere si azi întinde bratul <br> Acel ce-a dat luminã orbilor</p>
+                    <p>3. A vindecat leprosii chiar si demonizatii <br> El a adus salvarea tuturor <br> Sã ne unim cu totii sã ne rugãm toti fratii <br> Sã mai coboare Domnul în popor</p>
+                    <p>4. Nu te-ndoi ci crede cãci Domnul se îndurã <br> Prin sângele cel Sfânt ai fost spãlat <br> Adu-ti aminte astãzi ce scrie în Scripturã <br> Si poti pleca acasã vindecat</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G Vrednic esti de cinste</h2>
+            <div class="Title">
+                <h2>G Vrednic esti de cinste</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1 - 3m - 2m - 4.5</p>
                     <p><span>R</span>1 - 6m - 4 - 2m.5</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: Vrednic eşti de cinste şi-nchinare, <br> Ridicăm mâinile noastre, <br> Înălţăm Numele Tău! :/</p>
+                    <p>R1: Ce mare eşti! <br> Şi ce mari minuni faci Tu! <br> /: Şi ca Tine altul nu-i :/ <br> Ce mare eşti!</p>
+                    <p>2. /: Vrem să spunem lumii despre Tine, <br> Cum prin moartea Ta pe cruce <br> Tuturor ne-ai arătat :/</p>
+                    <p>R2: Căci Tu esti Domn! <br> Tu esti Domn cu-adevărat, <br> /: Şi ca Tine altul nu-i :/ <br> Căci Tu eşti Domn! (Ce mare eşti!)</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G Tu din vanturi faci solii</h2>
+            <div class="Title">
+                <h2>G Tu din vanturi faci solii</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1.4 - 1 - 1.4 - 1 <br> 4.1 - 4.1 - 5 - 5</p>
                     <p><span>R</span>1.4 - 1 - 1.4 - 5/2 <br> 1.4 - 1.4 - 1.5 - 1</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Tu din vânturi faci solii, / Tu ai înălţat munţii, <br> Doamne, lăudat să fii! / Faci din flăcari slujitori, <br> Tu-aduci ploaie, Tu-aduci nori, / Mare Eşti, Sfânt creator!</p>
+                    <p>R: Ce mare eşti! Ce mare eşti! <br> Şi nimeni nu-I ca Tine, Doamne-n univers. <br> Ce mare eşti! Ce mare eşti! <br> O, Domnul meu! O, Domnul meu! O, Domnul meu!</p>
+                    <p>2. Tu-ai tras linia zărilor, / Ai pus hotare mărilor, <br> Tu eşti Domnul domnilor! / Chemi pe nume stelele, <br> Tu ai creat soarele, / Mari Îţi sunt lucrările!</p>
+                    <p>3. Toate câte le-ai creat / Îţi dau slavă ne-ncetat, <br> Doamne, Fi-n veci lăudat! / Văi şi dealuri şi câmpii, <br> Păsărele mii şi mii, / Toate-Ţi spun slăvit să fii!</p>
+                    <p>4. Peste veacuri Tu domneşti, / Din vecii acelaş eşti, <br> Domn al slăvilor cereşti! / Tu în glorii locuieşti, <br> Doar Tu, Doamne, porunceşti, / Sfânt, Sfânt, Sfânt de trei ori eşti!</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>G O ce valuri de indurare</h2>
+            <div class="Title">
+                <h2>G O ce valuri de indurare</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m.3,4 - 3.6m - 1,5.6m - 2m.6m</p>
                     <p><span>R</span>1.5 - 6m,4.3 - 6m.2m - 4.3 <br> 6m - 3.6m - 1,5.6m - 3.6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. O, ce valuri de-ndurare <br> Curg din crucea lui Isus <br> O, ce jertfă minunată <br> Este jertfa lui Isus.</p>
+                    <p>R: Curăţit în al Lui sânge <br> Şi crezând în jertfa Lui <br> Mă apropii fără teamă <br> De Preasfântul Dumnezeu.</p>
+                    <p>2. Pretutindeni să se-ntindă <br> Valu-acestei mari iubiri; <br> Toată lumea să audă <br> Despre jertfa lui Isus.</p>
+                    <p>3. Orice suflet ce se află <br> În osândă şi păcat <br> Să se-ntoarcă azi la Tatăl <br> Şi să fie mântuit.</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>F Era odata o tainica gradina (3/8)</h2>
+            <div class="Title">
+                <h2>F Era odata o tainica gradina (3/8)</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1,6m - 1 - 5 - 5 - 3m - 6m <br> 1,6m - 1 - 1 - 1 - 1</p>
                     <p><span>R</span>1,6m - 4 - 4 - 1 - 1 - 1 - 6m<br> 1,6m - 1 - 5 - 1,5 - 1 - 1 <br> La final: 1 - 3m - 6m - 6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Era odat-o tainică grădină <br> În care Domnul se ruga plângând, <br> /: Şi faţa Lui, cea plină de lumină <br> Era-ntristată până la mormânt. :/</p>
+                    <p>2. De multe ori pe faţă El căzuse <br> Şi se ruga cu mult amar nespus; <br> /: “Să treacă Tată, să nu beau paharul! “ <br> Paharul suferinţei lui Isus. :/</p>
+                    <p>3. În Ghetismani, grădină neuitată <br> În tine plânge Domnul cu amar – <br> /: Şi-apoi se-mbracă-n haina umilinţei <br> Şi-şi pregăteşte drumul spre Calvar. :/</p>
+                    <p>4. O, Ghetismani, grădina neuitată, <br> Tu ai văzut durerea lui Isus, <br> /: Pe Iuda, când a sărutat o dată <br> Pe Domnul strălucirilor de sus! :/</p>
+                    <p>5. O, Ghetismani aş vrea să fiu în tine, <br> Să văd şi locul unde El a plâns; <br> /: Să plâng şi eu, cu lacrimi şi suspine <br> Să plâng, căci pentru mine El a plâns. :/</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>A Mainile imi ridic / Viata mea sa ii cante Lui</h2>
+            <div class="Title">
+                <h2>A Mainile imi ridic / Viata mea sa ii cante Lui</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1 - 6m - 4 - 2m <br> 1 - 6m - 5 - 4</p>
                     <p><span>R</span>1 - 5 - 6m - 4 <br> 4.5 - 6m.4 - 2m.5 - 1</p>
                     <p><span>B</span>4/1 . 1 - 6m.5 - 4,5.6m - 5sus</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Mâinile-mi ridic <br> Dar n-am ce să-Ţi ofer <br> Doar un suflet trist şi gol <br> Tu să îl transformi! <br> Prin cuvântul meu şi prin fapta mea <br> Viaţa mea să Îţi las <br> Jertfă pe altar!</p>
+                    <p>R: Viaţa mea să-I cânte Lui <br> Viaţa mea să-I cânte Lui <br> Vreau să vestesc acum, <br> Al Său nume cântând <br> Până când încă mai e timp <br> Viaţa mea să-I cânte Lui!</p>
+                    <p>2. Doamne, azi Îţi dau <br> Ca jertfă viaţa mea <br> Ca să-i pot sluji pe toţi <br> Şi voia să-Ţi urmez! <br> Prin cuvântul meu şi prin fapta mea <br> Viaţa mea să Îţi las <br> Jertfă pe altar!</p>
+                </div>
             </div>
         </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Mii de generatii / Holy forever</h2>
                     <p><span>S</span>1 - 4.1 - 6m.5 - 4</p>
@@ -575,10 +762,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>B Se va manifesta</h2>
                     <p><span>I</span>6m - 4 - 5 - 3</p>
@@ -590,10 +792,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Eb Aleluia Doamne iti voi canta</h2>
                     <p><span>S</span>6m.3 - 6m.5,6m - 6m,5.4 - 5,3.6m</p>
@@ -604,10 +821,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Eb Aleluia Tie Doamne Aleuia iti voi canta</h2>
                     <p><span>S</span>6m.5 - 6m.4,5 - 6m.5 - 6m <br> 4.5 - 6m - 4.5 - 6m</p>
@@ -618,10 +850,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Veniti sa ii multumim / Cand sunt slab El e tare</h2>
                     <p><span>S</span>1 - 5 - 6m - 3m <br> 4 - 1 - 7b - 5</p>
@@ -632,10 +879,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>A Te vad pe nori cum vii / Si imi doresc</h2>
                     <p><span>I</span>1 - 1 - 6m - 6m <br> 5 - 5 - 4 - 4</p>
@@ -647,10 +909,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Traim vremi de har / El vine iar</h2>
                     <p><span>S</span>1 - 4 - 1.5 - 1 <br> 1 - 4 - 1.5 - 1 <br> 3m - 6m - 4 - 5 <br> 1 - 4 - 6m.5 - 1.4,1</p>
@@ -662,10 +939,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Ancora / In orice vreme</h2>
                     <p><span>S</span>6m - 5 - 4 - 4</p>
@@ -678,10 +970,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Amagire / Cata vreme a trecut</h2>
                     <p><span>S</span>1.5 - 1 - 5.1 - 1.4 <br> 1 . 5,1 - 1.4 - 1 . 5,1 - 1</p>
@@ -692,10 +999,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>B O nu i nimeni / Graves into garden</h2>
                     <p><span>S</span>1.,4 - 1 - 6m.5 - 4</p>
@@ -707,10 +1029,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F Al Tau pe veci voiesc sa fiu (1/2)</h2>
                     <p><span>S</span>6m.5 - 1.6m - 4.1 - 6m</p>
@@ -721,10 +1058,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Credincios pan la capat voi fi</h2>
                     <p><span>S</span>1 - 1.4 - 1 - 1 <br> 5 - 5 - 1 - 1</p>
@@ -736,10 +1088,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Credinta mea nu i ancorata / Esti Dumnezeu</h2>
                     <p><span>S</span>1.5 - 6m.5 - 1.4 - 5 <br> 2m.5 - 1,5.6m,5 - 4.5 - 4</p>
@@ -751,10 +1118,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F As vrea sa mor fata de pacat</h2>
                     <p><span>S</span>6m - 2m - 5 - 1 <br> 4 - 2m - 3 - 3</p>
@@ -765,10 +1147,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Indeajuns mi e Doamne doar harul Tau</h2>
                     <p><span>S</span>1 - 2m - 5 - 1</p>
@@ -779,10 +1176,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Tara mea / Acolo nu vor fi durere</h2>
                     <p><span>S</span>6m - 2m - 5 - 6m <br> 6m - 2m - 2m - 3 <br> 3 - 6m</p>
@@ -793,10 +1205,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Nu vreau sa fiu ingrijorat / Da Da Da Da Doamne Da</h2>
                     <p><span>S</span>1 - 4 - 6m - 5</p>
@@ -808,10 +1235,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Binecuvantata i viata / Pocainta</h2>
                     <p><span>S</span>1.4,5 - 1 - 6m.5 - 1</p>
@@ -822,10 +1264,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Isus stiu ma iubeste</h2>
                     <p><span>S</span>1 - 1 - 4 - 1 <br> 1 - 1 - 4.1 - 5.1</p>
@@ -836,10 +1293,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D N ai asemanare / Iti cantam Osana</h2>
                     <p><span>S</span>1.5 - 5.1 - 1.5 - 5.1</p>
@@ -850,10 +1322,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Tu esti Domnul minunilor</h2>
                     <p><span>S</span>6m - 1 - 4 - 1</p>
@@ -866,10 +1353,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Ce ar fi faptura mi fara Tine?</h2>
                     <p><span>S</span>1.5 - 1 - 1.5 - 1 <br> 6m - 2 - 5 - 1</p>
@@ -880,10 +1382,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Isus m ai cuprins din necuprins</h2>
                     <p><span>S</span>1 - 4 - 5 - 5.1</p>
@@ -894,10 +1411,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Bb Jos in via Dolorosa</h2>
                     <p><span>I</span>6m . 3m/5 - 4 - 6m . 3m/5 - 2/4# <br> 6m . 3m/4 - 4,2/4</p>
@@ -910,10 +1442,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Bb La poarta cea frumoasa / Aur argint</h2>
                     <p><span>S</span>6m - 6m - 6m - 1.3 <br> 6m - 6m - 4.3 - 6m</p>
@@ -924,10 +1471,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Raspunde-mi  cand strig</h2>
                     <p><span>I</span>6m.5 - 4.3 - 6m.5 - 4.3</p>
@@ -939,24 +1501,44 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>C M-ai regasit / Tu m-ai cules din pulbere</h2>
+            <div class="Title">
+                <h2>C M ai regasit / Tu m ai cules din pulbere</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1.4 - 1 - 4 - 5 <br> 4.5/4 - 1/3.4 - 1/5.5 - 1</p>
                     <p><span>R</span>6m.4 - 1.5 - 1.4 - 1 <br> 6m.4 - 1.4 - 1.5 - 1</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. M-ai regăsit când eu pierdut în mine <br> Mă răstigneam pe-altarele de lut <br> Când prăbuşit zăceam a neputinţă <br> Când faptele tărâna m-au făcut.</p>
+                    <p>R: /:Tu M-ai cules din pulbere cu harul <br> Ca să mă-mbraci cu dragostea dintâi <br> Şi mi-ai şoptit “Tu eşti mărgăritarul <br> În dragostea Mea pururi să rămâi”. :/</p>
+                    <p>2. Azi eu alerg tot mai grăbit pe cale <br> Să urc acolo sus la dreapta Ta <br> Să trec prin poarta biruinţei cale <br> Prin poarta ce se cheamă Golgota</p>
+                    <p>3. Iar daca adesea cad sub greul crucii <br> Şi mă pândesc ispitele-n ascuns <br> Atuncea mulţumiri Ţi-aduc Isuse <br> Căci harul Tău îmi este de ajuns.</p>
+                </div>
             </div>
         </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Luptati luptati rugati va</h2>
                     <p><span>S</span>1 - 2m - 5.1 - 5.1</p>
@@ -967,10 +1549,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>A Meriti tot ORIGIN WRSHP</h2>
                     <p><span>S</span>4 - 4 - 6m - 3m</p>
@@ -981,10 +1578,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Tie ma predau</h2>
                     <p><span>S</span>1.4 - 5.1 - 6m.4 - 5.1</p>
@@ -995,10 +1607,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>B Deschide mi ochii inimii Doamne</h2>
                     <p><span>S</span>1 - 5 - 6m - 4</p>
@@ -1009,10 +1636,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Am intalnit o dragoste / Traiesc pentru Tine</h2>
                     <p><span>S</span>1 - 6m - 4 - 1.6m</p>
@@ -1023,10 +1665,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Canta suflet al meu</h2>
                     <p><span>S</span>4.1 - 5.6m - 4.1 - 5.6m <br> 4.1 - 5.6m - 6m.4 - 1.4,5</p>
@@ -1037,10 +1694,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Splendoare de imparat</h2>
                     <p><span>A</span>1 - 1 - 6m - 6m - 4 - 5</p>
@@ -1050,10 +1722,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Osana in inaltime</h2>
                     <p><span>I</span>6m - 1 - 2m - 3m</p>
@@ -1066,10 +1753,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Good Good Father</h2>
                     <p><span>S</span>1 - 1 - 1 - 1 <br> 4.1 - 2m.5</p>
@@ -1080,10 +1782,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Ce dar maret e Isus salvatorul / Tot ce sunt sunt prin harul Sau</h2>
                     <p><span>S</span>1 - 4 - 1.,6m - 5 <br> 1 - 4 - 1.5 - 1</p>
@@ -1094,10 +1811,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E O inima inteleapta | Adriana Stoica</h2>
                     <p><span>S</span>1 - 1.4 - 2m,1.6m,5 - 5,2m.1 <br> 4,1.6m,5 - 5.1 - 1</p>
@@ -1108,10 +1840,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Se simte se simte aici bucuria</h2>
                     <p><span>S</span>6m - 2.5 - 5.1 <br> 4.2m - 3 - 2</p>
@@ -1122,10 +1869,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Doamne nu ma lasa (Sunt copilul lui Hristos)</h2>
                     <p><span>S</span>6m - 4 - 1 - 5</p>
@@ -1136,10 +1898,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>A Fii binecuvantat</h2>
                     <p><span>A</span>1 - 5 - 6m - 4</p>
@@ -1149,10 +1926,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E El este Domn si in ceruri domneste</h2>
                     <p><span>S</span>1 - 4.1 - 5 - 1</p>
@@ -1163,10 +1955,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Bb O creste mi iubirea</h2>
                     <p><span>S</span>6m.,2m - 6m - 4 - 3</p>
@@ -1177,10 +1984,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Domnul e mult mai mare</h2>
                     <p><span>S</span>1 - 4.1 - 1 - 1.5</p>
@@ -1191,10 +2013,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Osana amin osana</h2>
                     <p><span>A</span>6m - 5 - 4 - 3m</p>
@@ -1204,10 +2041,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Bb Aur argint si palate</h2>
                     <p><span>S</span>1 - 4.1 - 1.,4 - 5,1</p>
@@ -1219,10 +2071,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Din tine am venit iubire</h2>
                     <p><span>S</span>6m - 6m - 2m - 3 <br> 6m - 6m - 3 - 6m</p>
@@ -1233,10 +2100,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Daca Daniel n-avea credinta</h2>
                     <p><span>S</span>6m - 6m - 2m - 2m,3 <br> 6m - 6m - 2m - 2m,3,6m</p>
@@ -1247,10 +2129,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Daca Duhul Domnului ar fi in mine / Voi canta ca si David</h2>
                     <p><span>S</span>6m,2m.5 - 1.4 - 2m.3 - 6m.6</p>
@@ -1261,10 +2158,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Ce mare esti Tu / Caci dragostea Ta</h2>
                     <p><span>S</span>1 - 2m - 4.5 - 1</p>
@@ -1275,10 +2187,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Isuse scump a noastra mantuire / Mai sus</h2>
                     <p><span>S</span>1,5.1 - 1,4.1 - 1.4 - 1.5 <br> 1,5.1 - 1,4.1 - 1 - 1,5.1</p>
@@ -1289,10 +2216,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
         
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Cele mai frumoase momente / Noi ne bucuram</h2>
                     <p><span>S</span>1.4,1 - 1,4.5,1 - 2 - 5 <br> 1.4,1 - 6m,4.5,1 - 4.1,5 - 1</p>
@@ -1303,10 +2245,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Vrei tu sa scapi</h2>
                     <p><span>A</span>1 - 4.5 - 5 - 1</p>
@@ -1316,10 +2273,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F Pe crucea din dealul iubirii</h2>
                     <p><span>S</span>1.4,1 - 5.1 <br> 1.4,1 - 5.1</p>
@@ -1330,10 +2302,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Curatit esti de pacat si innoit</h2>
                     <p><span>S</span>1 - 1 - 1 - 5 <br> 1 - 4 - 1.5 - 1</p>
@@ -1344,10 +2331,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Binecuvanteaza Doamne Romania</h2>
                     <p><span>S</span>1.4 - 5.6m - 1.4 - 1.5</p>
@@ -1358,24 +2360,43 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>F Sangele lui Isus</h2>
+            <div class="Title">
+                <h2>F Sangele lui Isus</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1.,4 - 1 - 5.,4 - 1 - 1.,4</p>
                     <p><span>R</span>1 - 5,4,1,5 - 1</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. /: Sângele lui Isus, :/ x3 <br> Mă spală de păcat.</p>
+                    <p>2. /: Rănile lui Isus, :/ x3 <br> Mă vindecă acum.</p>
+                    <p>3. /: Dragostea lui Isus, :/ x3 <br> Mă curăţă acum.</p>
+                </div>
             </div>
         </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Invata ma sa infaptuiesc / Voia Ta</h2>
                     <p><span>S</span>6m - 6m - 2m - 3 (e d# d)</p>
@@ -1386,10 +2407,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Ab Te laudam by Adriana Stoica</h2>
                     <p><span>I</span>6m.3m - 4 - 2m.1 - 5</p>
@@ -1401,10 +2437,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Nu i prieten lui Isus asemenea</h2>
                     <p><span>S</span>1 - 4.1 - 1.2m - 5.1</p>
@@ -1415,10 +2466,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Tu esti scutul si taria mea</h2>
                     <p><span>S</span>6m.3m - 4.5 - 6m.3m - 4.3</p>
@@ -1430,10 +2496,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Maret Salvator</h2>
                     <p><span>S</span>1 - 5 - 6m.4 - 1.5</p>
@@ -1445,10 +2526,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Te astept Isuse / Tu esti aproape</h2>
                     <p><span>S</span>6m - 4.3 - 2m - 3.6</p>
@@ -1459,10 +2555,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>A O noapte sfanta binecuvantata</h2>
                     <p><span>S</span>1³³³.3⁵⁵ - 4⁶⁶⁴⁶.3¹ - 1⁵⁵³².3¹³⁴ - 5⁵⁴².1¹ <br> 1³³³.3⁵⁵ - 4⁶⁶⁴⁶.3¹ - 1⁵⁵⁴`³.2`⁷⁵⁶- 4`⁷¹⁷.3³</p>
@@ -1474,10 +2585,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Caci un copil ni s a nascut</h2>
                     <p><span>I</span>1 - 5 - 6m - 4</p>
@@ -1490,10 +2616,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F# A venit Isus pe lume</h2>
                     <p><span>S</span>1 - 4 - 1 - 5</p>
@@ -1505,10 +2646,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Intr un sat / Cant osana</h2>
                     <p><span>S</span>1.5 - 1.5 - 1.4 - 1.5</p>
@@ -1519,10 +2675,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>A Hai deschide inima ta</h2>
                     <p><span>S</span>1.4 - 1.7 - 6m.4 - 5.1 <br> 4 - 5 - 6m - 1</p>
@@ -1533,10 +2704,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G# Iata cum veni / El s-a nascut</h2>
                     <p><span>S</span>1 - 4 - 1 - 5 - 1</p>
@@ -1547,10 +2733,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F Ingeri mii / Glorie s-a nascut Mesia</h2>
                     <p><span>S</span>1 - 1.5 - 1 - 1.5</p>
@@ -1561,10 +2762,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Eb Doamne te rog nu pleca</h2>
                     <p><span>S</span>1.2m - 3.6m - 1.4 - 6m</p>
@@ -1575,10 +2791,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Noapte preasfintita | Otto Pascal</h2>
                     <p><span>I</span>6m.5,3m - 4 - 6m.3m - 4</p>
@@ -1591,10 +2822,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C O cantare de marire</h2>
                     <p><span>S</span>1 - 1.5 - 5 - 1</p>
@@ -1605,10 +2851,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Bb Doamne Tu esti un foc</h2>
                     <p><span>S</span>6m - 4 - 6m - 4 <br> 2m - 6m.1 - 4 - 3</p>
@@ -1619,10 +2880,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Isus cu slava imbracat</h2>
                     <p><span>S</span>¹1⁵ ⁵⁴³ - 4¹ ¹ - 1⁵ ⁵⁴³ - 5²</p>
@@ -1633,10 +2909,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Muzica a incetat / Inima inchinarii</h2>
                     <p><span>S</span>1³⁵⁵¹² - 5³²²¹ - 2³⁵⁵¹² - 5 <br> 2⁴⁴⁴ - 3³²¹² - 5¹²³²¹⁶</p>
@@ -1647,24 +2938,43 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>F Doar cel ce cauta si cauta si cauta</h2>
+            <div class="Title">
+                <h2>F Lui Isus / Doar cel ce cauta si cauta si cauta</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>6m - 2m - 3 - 6m.3</p>
                     <p><span>R</span>2m - 6m.4 - 7.3 - 6m</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    <p>1. Lui Isus, lui Isus <br> Inima si tot ce mai avem sa-I dam <br> Pentru El, pentru El <br> Chiar si vietile cu drag sa le riscam <br> Sa indraznim, sa indraznim <br> Pe ale Sale urme sfinte sa pasim <br> Ori cat de greu ne pare drumul <br> Hai sa indraznim!</p>
+                    <p>R: /: Doar Cel ce cauta si cauta si cauta <br> Gaseste lumina divina de sus <br> Doar cel ce bate si bate si bate <br> Primeste un bun raspuns <br> Celui ce cheama si cheama si cheama <br> I se raspunde cuvant la cuvant <br> Cel ce asteapta smerit <br> Isi vede visu-mplinit :/</p>
+                    <p>2. Slava lui, Slava lui <br> Domnul nostru este de-ndurare plin <br> Cu respect, cu respect <br> Sa venim la El cu toti sa-I multumim <br> Sa ne rugam, sa ne rugam <br> In prezenta Lui sa ne dorim sa stam <br> Oricat de greu ne pare totul <br> Hai sa ne rugam.</p>
+                </div>
             </div>
         </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Iubirea ta e atat de mare</h2>
                     <p><span>S</span>1 - 4.1 - 4.1 - 5</p>
@@ -1675,10 +2985,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Nu e munte prea mare</h2>
                     <p><span>S</span>1.2m - 6m - 1.2m - 6m <br> 1 - 5 - 2m - 4.5</p>
@@ -1690,10 +3015,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Schimba mi inima</h2>
                     <p><span>S</span>1.2m - 2m - 2m.5,1 - 3,6m <br> 6m.,2m - 2m,5.1,4 - 1</p>
@@ -1704,10 +3044,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Dumnezeul puternic</h2>
                     <p><span>S</span>1.4 - 1 - 5 - 1.,4</p>
@@ -1718,10 +3073,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F Voi pierduti cu sarcini grele</h2>
                     <p><span>S</span>1.,4 - 1 - 4 - 1</p>
@@ -1732,10 +3102,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F Te chem din adanc / Dar la Tine i iertare</h2>
                     <p><span>S</span>1.4,1 - 5.1,5 - 1.4,1 - 2m,5.1</p>
@@ -1746,10 +3131,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Afara ninge cu fulgi mari frumos e peste tot</h2>
                     <p><span>S</span>1 - 6m.2m - 5.1 - 5.1</p>
@@ -1760,10 +3160,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Un cantec de lauda e in inima mea</h2>
                     <p><span>S</span>1 - 4.1 - 5 - 4</p>
@@ -1775,10 +3190,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>B Christ is enough by Jeremy Roseberry</h2>
                     <p><span>I</span>¹⁷⁶⁵³ - (next)⁵¹⁷⁶⁵³</p>
@@ -1792,10 +3222,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Eb Ingeri mii din ceruri canta / Glorie</h2>
                     <p><span>S</span>1 - 4 - 1 - 4</p>
@@ -1806,10 +3251,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Tu esti iubirea din etern</h2>
                     <p><span>S</span>1 - 1 - 1 - 1</p>
@@ -1820,10 +3280,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D M am hotarat sa il urmez pe Isus</h2>
                     <p><span>S</span>1.5 - 6m.4 - 4 - 1</p>
@@ -1834,10 +3309,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>B Domnul fie cu tine</h2>
                     <p><span>I</span>1 - 4 - 3 - 5 (767) <br> 6m - 4 - 3.5 - 1</p>
@@ -1849,10 +3339,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Bm Osana amin osana</h2>
                     <p><span>S</span>6m - 5 - 4 - 3m</p>
@@ -1863,10 +3368,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Ab Eu te iubesc / Bunatatea ta</h2>
                     <p><span>S</span>1 - 4.1 - 5.6m - 4.5 <br> 6m.4 - 1,5.6m - 4.5 - 1</p>
@@ -1878,10 +3398,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F Stiu de pe acum</h2>
                     <p><span>S</span>6m - 4 - 5 - 1</p>
@@ -1892,10 +3427,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Pe sfanta vietii carare</h2>
                     <p><span>S</span>1 - 1 - 4 - 5 <br> 1 - 1 - 2m.5 - 1</p>
@@ -1906,10 +3456,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Isus Hristos e Domnul</h2>
                     <p><span>S</span>1 - 6s - 2m - 5s</p>
@@ -1920,10 +3485,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Voi veni cu bucurie / Osana binecuvantat</h2>
                     <p><span>S</span>1.4 - 1 - 1/3.4 - 5 <br> 1.4 - 1.6m - 2m.5 - 1</p>
@@ -1934,10 +3514,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Doar prin Duhul Tau / Ajutorul meu</h2>
                     <p><span>S</span>1 - 5 - 6m - 5</p>
@@ -1948,10 +3543,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>Eb Domnul sta in fruntea oastei Lui</h2>
                     <p><span>S</span>6m - 6m - 4.5 - 6m</p>
@@ -1962,10 +3572,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C In umblarea mea / Numai harul</h2>
                     <p><span>S</span>6m - 4 - 2m - 3 <br> 6m - 4 - 2m - 6m</p>
@@ -1976,10 +3601,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>A Isus viata noastra (3/4)</h2>
                     <p><span>S</span>1 - 4.1 - 1 - 2m.5</p>
@@ -1990,10 +3630,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Stiind ca i viu</h2>
                     <p><span>S</span>1 - 4 - 1 - 5</p>
@@ -2004,10 +3659,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Doamne Tu esti stanca</h2>
                     <p><span>S</span>1 - 4 - 2m - 5</p>
@@ -2018,10 +3688,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Cum doreste un cerb</h2>
                     <p><span>S</span>1.7 - 6m - 4.5 - 1</p>
@@ -2032,10 +3717,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>C Mai sus de oameni / Rastignit</h2>
                     <p><span>S</span>1.5 - 4.1 - 1.5 - 4.1 <br> 6m.1 - 4.1 - 2m.4 - 5.1</p>
@@ -2046,10 +3746,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>A Jos la picioarele Ti</h2>
                     <p><span>S</span>1.3m - 4.5 - 1.3m - 4.4m <br> 1.5#,7b - 1</p>
@@ -2060,10 +3775,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>E Doamne vreau sa ma inchin</h2>
                     <p><span>S</span>1 - 5 - 6m - 4</p>
@@ -2075,10 +3805,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Aceasta mi e dorinta</h2>
                     <p><span>S</span>1 - 6m - 4.1 - 5</p>
@@ -2090,10 +3835,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>D Nu i nimeni ca Tine Isus (1/2)</h2>
                     <p><span>S</span>1.4 - 5 - 1.4 - 5</p>
@@ -2109,10 +3869,25 @@ Fericit, cânt o cântare Domnului!</p>
                 <p>6. /: Nu-i nimeni ca Tine Isus :/ <br> /: Să poarte spre stele, pe-aripi de putere <br> Pe-aceia ce-n slavă îi duci. :/</p>
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Poporasul meu</h2>
                     <p><span>S</span>1 - 1 - 5.1</p>
@@ -2123,10 +3898,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>G Lumina lumii</h2>
                     <p><span>S</span>1.5 - 2m.4 - 1.5 - 4</p>
@@ -2138,10 +3928,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F O inima curata</h2>
                     <p><span>S</span>1.,5 - 6m - 4.5 - 1.5</p>
@@ -2153,10 +3958,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F Biruitor</h2>
                     <p><span>S</span>1 - 6m - 4 - 5</p>
@@ -2168,10 +3988,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F Nu va mai ganditi / Lucruri noi</h2>
                     <p><span>S</span>1 - 6m - 4 - 1</p>
@@ -2182,10 +4017,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F In numele Tau proclamam</h2>
                     <p><span>S</span>4.1 - 5 - 4.1 - 5</p>
@@ -2197,10 +4047,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F Eu de Tine am nevoie</h2>
                     <p><span>S</span>1.4 - 1 - 6m.5 - 4 <br> 1.4 - 1 - 5 - 4</p>
@@ -2212,10 +4077,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F Iubirea Lui neclintita ramane</h2>
                     <p><span>S</span>1 - 4 - 5 - 4</p>
@@ -2226,10 +4106,25 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
             <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
+                <label class="add" onclick="totop(event)"><p class="top">UP</p></label>
                 <article>
                     <h2>F O cat de bun</h2>
                     <p><span>S</span>1 - 5 - 5 - 1</p>
@@ -2240,18 +4135,35 @@ Fericit, cânt o cântare Domnului!</p>
                 
             </div>
         </section>
+        <section>
+            <div class="Title">
+                <h2></h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
+                    <p><span>S</span></p>
+                    <p><span>R</span></p>
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
+            </div>
+        </section>
 
         <section>
-            <div>
-                <label class="add" onclick="totop(event)"><p class="top">Move the song to the top</p></label>
-                <article>
-                    <h2>F Pregateste mi inima Doamne</h2>
+            <div class="Title">
+                <h2>F Pregateste mi inima Doamne</h2>
+                <p class="AddToTop" onclick="totop(event)">UP</p>
+            </div>
+            <div class="Song">
+                <div class="SongChords">
                     <p><span>S</span>1 - 5 - 4 - 5</p>
                     <p><span>R</span>1 - 5 - 4 - 1</p>
-                </article>
-            </div>
-            <div>
-                
+                </div>
+                <div class="SongLyrics">
+                    
+                </div>
             </div>
         </section>
     </main>

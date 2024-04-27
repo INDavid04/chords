@@ -15,7 +15,7 @@ header {
   display: block;
   position: sticky;
   top: 0;
-  background-color: rgb(0, 0, 24);
+  background-color: rgb(32, 32, 22);
   z-index: 1;
 }
 
@@ -37,6 +37,7 @@ nav li {
 }
 
 .InputContainer {
+  position: relative;
   width: 50%;
 }
 @media (orientation: landscape) {
@@ -45,14 +46,22 @@ nav li {
   }
 }
 
-nav input {
-  border: 1px solid rgba(250, 235, 215, 0.2);
-  padding: 0;
+.InputContainer svg {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  color: rgb(0, 0, 32);
+}
+
+.InputContainer input {
+  border: none;
+  border-radius: 2rem;
+  padding: 0 1rem 0 2rem;
   width: 100%;
   height: 2rem;
-  background-color: rgb(0, 0, 32);
-  color: rgb(250, 235, 215);
-  padding: 0 0.5rem;
+  background-color: rgb(250, 235, 215);
+  color: rgb(0, 0, 32);
+  font-size: 1rem;
 }
 
 .HeroContent {
@@ -75,53 +84,27 @@ nav input {
 .Chords {
   display: flex;
   flex-direction: column;
-  margin: 0 clamp(0.5rem, 5vw, 50rem);
 }
 
 section {
   display: flex;
   flex-direction: column;
   justify-content: top;
+  margin: 0 clamp(0.5rem, 5vw, 50rem);
   min-height: calc(100vh - 2rem);
-  margin-bottom: 2rem;
   min-height: calc(100svh - 2rem);
 }
-@media (orientation: landscape) {
-  section {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 
-@media (orientation: landscape) {
-  section div:nth-child(1) {
-    width: 50%;
-  }
-}
-
-p.top {
-  padding: 1.5rem;
-  width: 12rem;
-  background: linear-gradient(to right, transparent 0%, rgb(0, 0, 24) 5%, rgb(0, 0, 24) 95%, transparent 100%);
-  opacity: 0.5;
-  transition: opacity 0.2s;
-  cursor: pointer;
-}
-
-p.top:hover {
-  opacity: 1;
-}
-
-.add input {
-  display: none;
-}
-
-.add input:checked + .top {
-  display: none;
+.Title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
 }
 
 h2 {
+  margin: 0;
+  width: 1fr;
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1rem, 3vw, 3rem);
   font-weight: 500;
@@ -131,28 +114,68 @@ h2::first-letter {
   color: rgb(255, 200, 0);
 }
 
-.Chords article p {
-  position: relative;
-  margin-left: 1.5rem;
-  border-left: 0.1rem solid rgb(250, 235, 215);
-  padding-left: 0.1rem;
-  line-height: 4rem;
-  font-family: "Courier New", Courier, monospace;
-  font-size: clamp(1rem, 3vw, 2rem);
-  font-weight: bold;
+.AddToTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border: 3px solid rgb(255, 200, 0);
+  border-radius: 2rem;
+  padding: 0.7rem;
+  height: 1.5rem;
+  color: rgb(255, 200, 0);
+  transition: opacity 0.2s;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+@media (orientation: landscape) {
+  .AddToTop {
+    border: 4px solid rgb(255, 200, 0);
+    font-weight: bold;
+  }
 }
 
-.Chords span {
-  position: absolute;
-  top: 0;
-  left: -1.5rem;
+.AddToTop:hover {
+  background-color: rgb(255, 200, 0);
+  color: rgb(0, 0, 32);
 }
 
-section div:nth-child(2) {
+.Song {
   font-size: clamp(1rem, 3vw, 2rem);
 }
 @media (orientation: landscape) {
-  section div:nth-child(2) {
-    width: 45%;
+  .Song {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.SongChords {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  line-height: 1.8;
+}
+@media (orientation: landscape) {
+  .SongChords {
+    width: 40%;
+  }
+}
+
+.SongChords p {
+  position: relative;
+  margin-left: 2rem;
+  border-left: 2px solid rgb(250, 235, 215);
+  padding: 0.5rem;
+}
+
+.SongChords span {
+  position: absolute;
+  left: -2rem;
+}
+
+@media (orientation: landscape) {
+  .SongLyrics {
+    width: 55%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function searchText() {
     const searchInput = document.getElementById('searchInput');
     const searchText = searchInput.value.trim().toLowerCase();
-    const h2Elements = document.querySelectorAll('section h2'); // Select all h2 elements within sections
+    const h2Elements = document.querySelectorAll('section h2'); // Select all h2 elements
     
     if (searchText === '') {
         return;
