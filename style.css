@@ -152,6 +152,10 @@ h2::first-letter {
 }
 
 .SongChords {
+  position: sticky;
+  top: 3.375rem;
+  background-color: rgb(0, 0, 32);
+  align-self: flex-start;
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   line-height: 1.8;
@@ -159,6 +163,7 @@ h2::first-letter {
 @media (orientation: landscape) {
   .SongChords {
     width: 40%;
+    top: 2rem;
   }
 }
 

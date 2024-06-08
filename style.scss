@@ -36,8 +36,8 @@ header { display: block; position: sticky; top: 0; background-color: $secondary;
         .Song { font-size: $textclamp;
             @media (orientation: landscape) { display: flex; flex-direction: row-reverse; justify-content: space-between; }
         }
-            .SongChords { font-family: 'Courier New', Courier, monospace; font-weight: 700; line-height: 1.8; 
-                @media (orientation: landscape) { width: 40%; }
+            .SongChords { position: sticky; top: 3.375rem; background-color: $background; align-self: flex-start; font-family: 'Courier New', Courier, monospace; font-weight: 700; line-height: 1.8; 
+                @media (orientation: landscape) { width: 40%; top: 2rem; }
             }
                 .SongChords p { position: relative; margin-left: 2rem; border-left: 2px solid $text; padding: 0.5rem; }
                     .SongChords span { position: absolute; left: -2rem; }
