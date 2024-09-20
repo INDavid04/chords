@@ -149,7 +149,7 @@ h2::first-letter {
 
 .SongChords {
   position: sticky;
-  top: 0;
+  top: 3.3rem;
   background-color: rgb(0, 0, 32);
   align-self: flex-start;
   font-family: "Courier New", Courier, monospace;
