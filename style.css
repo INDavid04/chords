@@ -102,7 +102,7 @@ h2 {
   margin: 0;
   width: 1fr;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1.4rem, 3vw, 3rem);
   font-weight: 500;
 }
 
@@ -137,7 +137,7 @@ h2::first-letter {
 }
 
 .Song {
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1.4rem, 3vw, 2rem);
 }
 @media (orientation: landscape) {
   .Song {
