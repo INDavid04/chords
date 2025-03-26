@@ -11,6 +11,15 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+a {
+  color: rgb(250, 235, 215);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(255, 200, 0);
+}
+
 header {
   display: block;
   position: sticky;

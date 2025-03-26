@@ -9,6 +9,8 @@ $marginclamp: clamp(0.5rem, 5vw, 50rem);
 
 body { margin: 0; padding: 0; background-color: $background; color: $text; font-size: 16px; font-family: Arial, Helvetica, sans-serif; }
 h1 { font-family: Georgia, 'Times New Roman', Times, serif; }
+a { color: $text; }
+a:hover { text-decoration: none; color: $cta;}
 
 header { display: block; position: sticky; top: 0; background-color: $primary; z-index: 1; }
     nav { margin: 0 $marginclamp; }
