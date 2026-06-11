@@ -109,10 +109,21 @@ section {
 
 h2 {
   margin: 0;
+  flex: 1;
   width: 1fr;
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.4rem, 3vw, 3rem);
   font-weight: 500;
+}
+h2[data-youtube] {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+h2[data-youtube]:hover {
+  color: rgb(255, 200, 0);
+}
+h2[data-youtube].playing {
+  color: rgb(255, 200, 0);
 }
 
 h2::first-letter {

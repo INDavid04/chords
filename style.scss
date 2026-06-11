@@ -28,7 +28,18 @@ header { display: block; position: sticky; top: 0; background-color: $primary; z
 .Chords { display: flex; flex-direction: column; }
     section { display: flex; flex-direction: column; justify-content: top; margin: 0 $marginclamp; min-height: calc(100vh - 2rem); min-height: calc(100svh - 2rem); }
         .Title { display: flex; align-items: center; gap: 1rem; margin-top : 4rem; background-color: $background; }
-            h2 { margin: 0; width: 1fr; font-family: Arial, Helvetica, sans-serif; font-size: $titleclamp; font-weight: 500; }
+            h2 { margin: 0; flex: 1; width: 1fr; font-family: Arial, Helvetica, sans-serif; font-size: $titleclamp; font-weight: 500; 
+                &[data-youtube] {
+                    cursor: pointer;
+                    transition: color 0.3s;
+                    &:hover {
+                        color: $cta;
+                    }
+                    &.playing {
+                        color: $cta;
+                    }
+                }
+            }
                 h2::first-letter { color: $cta; }
             .AddToTop { display: flex; justify-content: center; align-items: center; margin: 0; border: 3px solid $cta; border-radius: 2rem; padding: 0.7rem; height: 1.5rem; color: $cta; transition: opacity .2s; cursor: pointer; font-size: 1.2rem; 
                 @media (orientation: landscape) { border: 4px solid $cta; font-weight: bold; }
