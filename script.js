@@ -47,9 +47,7 @@ function initializePlayer(videoId, callback) {
             'controls': 0,
             'disablekb': 1,
             'fs': 0,
-            'rel': 0,
-            'loop': 1,
-            'playlist': videoId
+            'rel': 0
         },
         events: {
             'onReady': (event) => {
@@ -60,17 +58,12 @@ function initializePlayer(videoId, callback) {
     });
 }
 
-// Extragere ID YouTube (Suportă acum și link-uri normale, youtu.be și Shorts)
+// Extragere ID YouTube
 function getYouTubeId(url) {
     if (!url || url === 'LINK') return null;
-    
-    // Dacă utilizatorul a pus direct ID-ul de 11 caractere
     if (/^[a-zA-Z0-9_-]{11}$/.test(url)) return url;
-    
-    // Expresie regulată actualizată care recunoaște și /shorts/
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=|shorts\/)([^#\&\?]*).*/;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
     const match = url.match(regExp);
-    
     return (match && match[2].length === 11) ? match[2] : null;
 }
 
@@ -115,13 +108,7 @@ function playYouTubeVideo(titleElement, youtubeUrl) {
         });
     } else {
         // Playerul există deja, doar încărcăm noul video în el
-        ytPlayer.loadVideoById({
-            videoId: videoId,
-            playerVars: {
-                'loop': 1,
-                'playlist': videoId
-            }
-        });
+        ytPlayer.loadVideoById(videoId);
         ytPlayer.playVideo();
         titleElement.classList.add('playing');
         currentPlayingTitle = titleElement;
