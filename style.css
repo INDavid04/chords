@@ -1,3 +1,25 @@
+.nav-logo {
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+
+.primary-shape {
+  fill: #7F8266;
+}
+
+.accent-shape {
+  fill: #B0A496;
+}
+
+.bg-rect {
+  fill: #EBE5DC;
+}
+
+.dark-lines {
+  fill: #15110E;
+}
+
 body {
   margin: 0;
   padding: 0;
