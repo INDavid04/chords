@@ -18,24 +18,26 @@ a { color: $cta; }
 a:hover { color: $secondary; text-decoration: none;}
 
 header { display: block; position: sticky; top: 0; background-color: $background; z-index: 1; }
-    nav { margin: 0 $marginclamp; }
-        nav ul { display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 0; border-bottom: 2px solid $secondary; list-style-type: none; }
+    nav { margin: 0 auto; padding: 0 0.5rem; max-width: 125rem; }
+        nav ul { display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 0; border-bottom: 2px solid $primary; list-style-type: none; }
             nav li { height: 100%; }
-                .InputContainer { position: relative; width: 100%; }
+                .InputContainer { position: relative; width: 100%; opacity: 0.8; }
+                    .InputContainer:focus, .InputContainer:hover { opacity: 1; }
                     .InputContainer input { padding-left: 1rem; border: none; border-radius: 2rem; outline: none; width: 100%; height: 3.375rem; background-color: $background; color: $text; font-size: 1rem; font-family: Arial, Helvetica, sans-serif; }
-                nav a {  }
+                nav a { opacity: 0.8; }
+                    nav a:hover, nav a:focus { opacity: 1; }
                     nav svg {  }
 
-.HeroContent { min-height: 100vh; min-height: 100svh; }
+.HeroContent { margin: 0 auto; padding: 0 0.5rem; max-width: 125rem; min-height: 100vh; min-height: 100svh; }
     .HeroContent h1 { font-size: $titleclamp; }
     .HeroContent p, .HeroContent li { font-size: $textclamp; }
 
-.Chords { display: flex; flex-direction: column; }
-    section { display: flex; flex-direction: column; justify-content: top; margin: 0 $marginclamp; min-height: calc(100vh - 2rem); min-height: calc(100svh - 2rem); }
+.Chords { display: flex; flex-direction: column; margin: 0 auto; padding: 0 0.5rem; max-width: 125rem; }
+    section { display: flex; flex-direction: column; justify-content: top; min-height: calc(100vh - 2rem); min-height: calc(100svh - 2rem); }
         .Title { display: flex; align-items: stretch; gap: 1rem; margin-top : 4rem; background-color: $background; }
-            .AddToTop { display: flex; justify-content: center; align-items: center; padding: 0.2rem 1.8rem; border-radius: 2rem; background-color: $cta; color: $background; font-size: $titleclamp; cursor: pointer; flex-shrink: 0; }
+            .AddToTop { display: flex; justify-content: center; align-items: center; padding: 0.2rem 1.8rem; border-radius: 2rem; background-color: $cta; color: $background; font-size: $textclamp; cursor: pointer; flex-shrink: 0; }
                 .AddToTop:hover { background-color: $secondary; color: $background; border-color: $secondary; }
-            h2 { margin: 0; flex: 1; min-width: 0; font-size: $titleclamp; font-weight: 500; color: $cta;
+            h2 { margin: 0; flex: 1; min-width: 0; font-size: $textclamp; font-weight: 500; color: $cta;
                 &[data-youtube] {
                     cursor: pointer;
                     &:hover {
@@ -50,10 +52,10 @@ header { display: block; position: sticky; top: 0; background-color: $background
             @media (orientation: landscape) { display: flex; flex-direction: row-reverse; justify-content: space-between; }
         }
             .SongChords { position: sticky; top: 3.3rem; background-color: $background; align-self: flex-start; font-family: 'Courier New', Courier, monospace; font-weight: 700; line-height: 1.8; 
-                @media (orientation: landscape) { width: 40%; top: 2rem; }
+                @media (orientation: landscape) { width: 45%; top: 2rem; }
             }
                 .SongChords p { position: relative; margin-left: 2rem; border-left: 2px solid $text; padding: 0.5rem; }
                     .SongChords span { position: absolute; left: -2rem; }
             .SongLyrics { 
-                @media (orientation: landscape) { width: 55%; }
+                @media (orientation: landscape) { width: 50%; }
             }

@@ -47,7 +47,9 @@ header {
 }
 
 nav {
-  margin: 0 clamp(0.5rem, 5vw, 50rem);
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  max-width: 125rem;
 }
 
 nav ul {
@@ -56,7 +58,7 @@ nav ul {
   align-items: center;
   margin: 0;
   padding: 0;
-  border-bottom: 2px solid #B0A496;
+  border-bottom: 2px solid #26211C;
   list-style-type: none;
 }
 
@@ -67,6 +69,11 @@ nav li {
 .InputContainer {
   position: relative;
   width: 100%;
+  opacity: 0.8;
+}
+
+.InputContainer:focus, .InputContainer:hover {
+  opacity: 1;
 }
 
 .InputContainer input {
@@ -82,7 +89,18 @@ nav li {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+nav a {
+  opacity: 0.8;
+}
+
+nav a:hover, nav a:focus {
+  opacity: 1;
+}
+
 .HeroContent {
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  max-width: 125rem;
   min-height: 100vh;
   min-height: 100svh;
 }
@@ -98,13 +116,15 @@ nav li {
 .Chords {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  max-width: 125rem;
 }
 
 section {
   display: flex;
   flex-direction: column;
   justify-content: top;
-  margin: 0 clamp(0.5rem, 5vw, 50rem);
   min-height: calc(100vh - 2rem);
   min-height: calc(100svh - 2rem);
 }
@@ -125,7 +145,7 @@ section {
   border-radius: 2rem;
   background-color: #7F8266;
   color: #15110E;
-  font-size: clamp(1.4rem, 3vw, 3rem);
+  font-size: clamp(1.4rem, 3vw, 2rem);
   cursor: pointer;
   flex-shrink: 0;
 }
@@ -140,7 +160,7 @@ h2 {
   margin: 0;
   flex: 1;
   min-width: 0;
-  font-size: clamp(1.4rem, 3vw, 3rem);
+  font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 500;
   color: #7F8266;
 }
@@ -176,7 +196,7 @@ h2[data-youtube].playing {
 }
 @media (orientation: landscape) {
   .SongChords {
-    width: 40%;
+    width: 45%;
     top: 2rem;
   }
 }
@@ -195,6 +215,6 @@ h2[data-youtube].playing {
 
 @media (orientation: landscape) {
   .SongLyrics {
-    width: 55%;
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
