@@ -135,7 +135,7 @@ function totop(target) {
 /// Search a song ///
 /////////////////////
 
-function searchText() {
+function searchTheSong() {
     const searchInput = document.getElementById('searchInput');
     const searchText = searchInput.value.trim().toLowerCase();
     const h2Elements = document.querySelectorAll('section h2');
@@ -144,11 +144,9 @@ function searchText() {
         return;
     }
     
-    let found = false;
     h2Elements.forEach(function(h2) {
         const text = h2.textContent.trim().toLowerCase();
         if (text.includes(searchText)) {
-            found = true;
             const section = h2.closest('section');
             section.scrollIntoView({ behavior: 'smooth', block: 'start' });
             return;
@@ -202,16 +200,20 @@ function playTheSong(event) {
 ///////////
 
 document.addEventListener('DOMContentLoaded', function() {
-    const toTopButtons = document.querySelectorAll('.add input[type="checkbox"]');
-    toTopButtons.forEach(function(checkbox) {
-        checkbox.addEventListener('change', totop);
+    /// Muta piesa sus la click pe gama
+    const toTopButtons = document.querySelectorAll('.AddToTop');
+    toTopButtons.forEach(function(button) {
+        button.addEventListener('click', totop);
     });
 
+    /// Muta piesa sus, ruleaza in fundal piesa si goleste bara de cautare la enter
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
+        searchInput.addEventListener('input', searchTheSong);
         searchInput.addEventListener('keydown', playTheSong);
     }
 
+    /// Ruleaza sau pune pauza la click pe titlul piesei
     const songTitles = document.querySelectorAll('h2[data-youtube]');
     songTitles.forEach(title => {
         title.addEventListener('click', function() {
